@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<title>Clark Narvas</title>
+<body>
+
+<video autoplay muted loop id="background">
+	<source src="assets/loop.webm" type="video/webm">
+</video>
+
+<div class="content">
+<img src="assets/me.png" alt="Picture of me lol" style="width: 200px; height: 200px">
+<h1>CLARK NARVAS</h1>
+<p>I create too much stuff</p>
+<hr width=3% style="color: white">
+
+<div id="socialmediaicons">
+<a href="https://twitter.com/clarknarvas">
+<img class="socialmedia" src="assets/twitter circle white.png" style="width: 40px; height: 40px;">
+</a>
+
+<a href="https://www.youtube.com/channel/UCu197cd4WVhhCUKD1yk0PPQ">
+<img class="socialmedia" src="assets/youtube.png" style="width: 40px; height: 40px">
+</a>
+</div>
+
+<a href="https://www.youtube.com/channel/UCu197cd4WVhhCUKD1yk0PPQ">
+<button class="button">TECH BYTE</button>
+</a>
+
+
+<button disabled href="https://techbyte.clarknarvas.com" class="button">PORTFOLIO</a>
+</div>
+
+
+</div>
+
+
+
+
+</body>
+
+<style>
+
+#background {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-height: 100%;
+	min-width: 100%;
+	z-index: -1;
+}
+
+@font-face {
+font-family: 'DIN Condensed Bold';
+font-style: normal;
+font-weight: normal;
+src: local('DIN Condensed Bold'), url('DINCondensed-Bold.woff') format('woff');
+}
+
+a {
+	text-decoration: none;
+}
+
+button.button {
+	background-color: white;
+	padding: 10px;
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-family: DIN Condensed Bold;
+	font-size: 150%;
+	color: black;
+	text-decoration: none;
+	border: none;
+	transition: linear 0.2s;
+	cursor: pointer;
+}
+
+button.button:hover {
+	background-color: #2E2EFE;
+	color: white;
+}
+
+button.button:disabled {
+	background-color: #2E2E2E;
+	color: #6E6E6E;
+	cursor: not-allowed;
+}
+.content {
+	text-align: center;
+	padding-top: 10%;
+}
+
+#socialmediaicons {
+	padding-top: 1%;
+	opacity: 1;
+}
+
+.socialmedia {
+	padding-left: 5px;
+	padding-right: 5px;
+	transition: linear 0.2s;
+}
+
+.socialmedia:hover {
+    opacity: 0.5;
+}
+body {
+	padding: 0;
+	margin: 0;
+	background-image: url("assets/background.png");
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 300%;
+	color: white;
+	font-family: DIN Condensed Bold;
+	line-height: 0.5;
+}
+
+p {
+	color: white;
+	font-family: Arial;
+}
+</html>
