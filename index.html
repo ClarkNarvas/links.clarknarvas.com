@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
 <title>Clark Narvas</title>
 <body>
 
-<video autoplay muted loop id="background">
+<video autoplay muted id="background">
 	<source src="assets/loop.webm" type="video/webm">
 </video>
 
 <div class="content">
 <img src="assets/me.png" alt="Picture of me lol" style="width: 200px; height: 200px">
-<h1>CLARK NARVAS</h1>
+<h1>Clark Narvas</h1>
 <p>I create too much stuff</p>
 <hr width=3% style="color: white">
 
@@ -27,8 +31,9 @@
 <button class="button">TECH BYTE</button>
 </a>
 
-
-<button disabled href="https://techbyte.clarknarvas.com" class="button">PORTFOLIO</a>
+<a href="portfolio/index.html">
+<button disabled class="button">PORTFOLIO</button>
+</a>
 </div>
 
 
@@ -50,13 +55,6 @@
 	z-index: -1;
 }
 
-@font-face {
-font-family: 'DIN Condensed Bold';
-font-style: normal;
-font-weight: normal;
-src: local('DIN Condensed Bold'), url('DINCondensed-Bold.woff') format('woff');
-}
-
 a {
 	text-decoration: none;
 }
@@ -68,8 +66,9 @@ button.button {
 	margin-top: 20px;
 	margin-left: 5px;
 	margin-right: 5px;
-	font-family: DIN Condensed Bold;
-	font-size: 150%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 100%;
 	color: black;
 	text-decoration: none;
 	border: none;
@@ -113,15 +112,15 @@ body {
 }
 
 h1 {
-	font-weight: normal;
+	font-weight: bold;
 	font-size: 300%;
 	color: white;
-	font-family: DIN Condensed Bold;
-	line-height: 0.5;
+	font-family: 'Roboto', sans-serif;
+	line-height: 0.2;
 }
 
 p {
 	color: white;
-	font-family: Arial;
+	font-family: 'Roboto', sans-serif;
 }
 </html>
