@@ -1,0 +1,162 @@
+@font-face {
+  font-family: MoskNormal;
+  src: url("fonts/Mosk Normal 400.ttf");
+}
+
+@font-face {
+  font-family: MoskBold;
+  src: url("fonts/Mosk Bold 700.ttf");
+}
+
+/* start of border body stuff*/
+#top, #bottom, #left, #right {
+	background: #467cff;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 20px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 20px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+
+
+@media
+
+    /* Fairly small screens including iphones */
+
+
+    only screen and (max-width: 900px)  {
+    	#top, #bottom { height: 10px;}
+
+     #left, #right { width: 10px; }
+
+     .gridcontainer {
+       width: 100% !important;
+     }
+
+
+
+    }
+
+
+
+
+/*End of Border Body*/
+span.highlight {
+  background-color: #2768ff;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  border-radius: 5px;
+  color: white;
+  font-family: MoskBold;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.gridcontainer {
+  width: 70%;
+  margin: auto;
+  padding: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+.wrapper {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.box1 {
+  background-color: #2768ff;
+  width: 200px;
+  height: 200px;
+  transition: all .4s ease-in-out;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  margin: 10px;
+}
+
+
+
+.box1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.content {
+  text-align: center;
+  background-color: white;
+  overflow: auto;
+  height: 100%;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: MoskNormal;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: MoskBold;
+  font-size: 250%;
+}
+
+h2 {
+  font-family: MoskBold;
+  font-weight: normal;
+}
+
+#one {
+  height: auto;
+}
+
+#two {
+  width: 100%;
+  background-color: #f3f6ff;
+  min-height: 520px;
+  height: auto;
+}
+p {
+  font-family: MoskNormal;
+  font-size: 100%;
+}
+
+a {
+  font-family: MoskNormal;
+  font-size: 100%;
+  color: #2768ff;
+  border-bottom: solid 2px #2768ff;
+  text-decoration: none;
+}
+
+a.plain {
+  border-bottom: 0px;
+  color: black;
+  font-family: MoskNormal;
+  font-size: 100%;
+}
+
+a.plain:hover {
+  color: black;
+  border-bottom: none;
+}
+
+a:hover {
+  font-family: MoskNormal;
+  font-size: 100%;
+  color: dimgrey;
+  border-bottom: solid 2px dimgrey;
+}

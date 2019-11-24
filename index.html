@@ -1,126 +1,66 @@
-<!DOCTYPE html>
 <html>
-<head>
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-</head>
-<title>Clark Narvas</title>
+  <head>
+    <title>Clark Narvas Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
 <body>
 
-<video autoplay muted id="background">
-	<source src="assets/loop.webm" type="video/webm">
-</video>
+  <div id="left"></div>
+  <div id="right"></div>
+  <div id="top"></div>
+  <div id="bottom"></div>
 
-<div class="content">
-<img src="assets/me.png" alt="Picture of me lol" style="width: 200px; height: 200px">
-<h1>Clark Narvas</h1>
-<p>I create too much stuff</p>
-<hr width=3% style="color: white">
+ <div class="content">
 
-<div id="socialmediaicons">
-<a href="https://twitter.com/clarknarvas">
-<img class="socialmedia" src="assets/twitter circle white.png" style="width: 40px; height: 40px;">
-</a>
+  <div id="one">
+    <div class="wrapper">
+    <img src="assets/me.png" style="width: 150px; height: auto;margin-top: 5%;">
+    <h1>Hi there! 👋</h1>
+    <p style="margin-bottom: 100px;">My name is Clark Narvas. I'm a 14 year old <span class="highlight">content creator</span> from Sheffield.</p>
+  </div>
+  </div>
 
-<a href="https://www.youtube.com/channel/UCu197cd4WVhhCUKD1yk0PPQ">
-<img class="socialmedia" src="assets/youtube.png" style="width: 40px; height: 40px">
-</a>
+  <div id="two">
+    <div class="wrapper">
+    <h1 style="padding-top: 25px;">Video 🎥</h1>
+    <p><i>Someone once said to me that I had a photographic mind!</i></p>
+    <p>Ever since I was 9, I've been sorting keyframes and scrubbing back and forth through my timeline to create a <br> variety of content and motion graphics.</p>
+    <p>Here's some of my work 👇</p>
+    <a class="plain">I've worked with...</a> <a href="test">Young Greens</a>,
+    <a href="https://hackmed.uk">HackMed</a>, <a href="https://hacksheffield.co">HackSheffield</a>
+    ,<a href="https://pawlean.com">Pauline Narvas</a>
+
+    <div class="gridcontainer" style="margin-top: 25px;">
+      <div class="box1">
+        <h2>Young Greens</h2>
+      </div>
+
+      <div class="box1">
+        <h2>HackMed</h2>
+      </div>
+
+      <div class="box1">
+        <h2>HackSheffield</h2>
+      </div>
+
+      <div class="box1">
+        <h2>Pauline Narvas</h2>
+      </div>
+    </div>
 </div>
 
-<a href="https://techbyte.clarknarvas.com">
-<button class="button">TECH BYTE</button>
-</a>
-
-<a href="portfolio/index.html">
-<button disabled class="button">PORTFOLIO</button>
-</a>
-</div>
-
 
 </div>
 
+<div id="three">
+  <div class="wrapper">
+  <h1 style="padding-top: 25px;">Graphics and Branding 🖊</h1>
+  <p>Brand consistency and attention to detail is a god-sent 🙏</p>
+</div>
 
-
-
+</div>
 </body>
-
-<style>
-
-#background {
-	position: fixed;
-	right: 0;
-	bottom: 0;
-	min-height: 100%;
-	min-width: 100%;
-	z-index: -1;
-}
-
-a {
-	text-decoration: none;
-}
-
-button.button {
-	background-color: white;
-	padding: 10px;
-	display: inline-block;
-	margin-top: 20px;
-	margin-left: 5px;
-	margin-right: 5px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
-	font-size: 100%;
-	color: black;
-	text-decoration: none;
-	border: none;
-	transition: linear 0.2s;
-	cursor: pointer;
-}
-
-button.button:hover {
-	background-color: #2E2EFE;
-	color: white;
-}
-
-button.button:disabled {
-	background-color: #2E2E2E;
-	color: #6E6E6E;
-	cursor: not-allowed;
-}
-.content {
-	text-align: center;
-	padding-top: 10%;
-}
-
-#socialmediaicons {
-	padding-top: 1%;
-	opacity: 1;
-}
-
-.socialmedia {
-	padding-left: 5px;
-	padding-right: 5px;
-	transition: linear 0.2s;
-}
-
-.socialmedia:hover {
-    opacity: 0.5;
-}
-body {
-	padding: 0;
-	margin: 0;
-	background-image: url("assets/background.png");
-}
-
-h1 {
-	font-weight: bold;
-	font-size: 300%;
-	color: white;
-	font-family: 'Roboto', sans-serif;
-	line-height: 0.2;
-}
-
-p {
-	color: white;
-	font-family: 'Roboto', sans-serif;
-}
 </html>
