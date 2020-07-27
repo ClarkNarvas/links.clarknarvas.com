@@ -1,3 +1,5 @@
+
+
 @font-face {
   font-family: MoskNormal;
   src: url("fonts/Mosk Normal 400.ttf");
@@ -16,6 +18,9 @@
 	#left, #right {
 		top: 0; bottom: 0;
 		width: 20px;
+    z-index: 10000;
+    animation-name: border-top;
+    animation-duration: 1s ease;
 		}
 		#left { left: 0; }
 		#right { right: 0; }
@@ -23,6 +28,7 @@
 	#top, #bottom {
 		left: 0; right: 0;
 		height: 20px;
+    z-index: 10000;
 		}
 		#top { top: 0; }
 		#bottom { bottom: 0; }
@@ -49,7 +55,6 @@
 
 
 
-
 /*End of Border Body*/
 span.highlight {
   background-color: #2768ff;
@@ -64,48 +69,35 @@ span.highlight {
   white-space: nowrap;
 }
 
-.gridcontainer {
-  width: 70%;
-  margin: auto;
-  padding: auto;
+#one {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  align-content: space-between;
 }
 .wrapper {
-  padding-left: 5%;
-  padding-right: 5%;
 }
 
-.box1 {
-  background-color: #2768ff;
-  width: 200px;
-  height: 200px;
-  transition: all .4s ease-in-out;
-  border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  margin: 10px;
-}
-
-
-
-.box1:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-.content {
-  text-align: center;
+::selection {
   background-color: white;
-  overflow: auto;
-  height: 100%;
 }
+.site-cover {
+  background-color: white;
+  z-index: -100;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  animation-name: sitefade;
+  animation-duration: 2s;
+}
+
+
 
 
 body {
   margin: 0;
   padding: 0;
   font-family: MoskNormal;
+
 }
 h1 {
   margin: 0;
@@ -119,16 +111,26 @@ h2 {
   font-weight: normal;
 }
 
-#one {
-  height: auto;
+h2.link:hover {
+  font-family: MoskNormal;
+  font-size: 100%;
+  color: dimgrey;
+  border-bottom: solid 2px dimgrey;
 }
 
-#two {
-  width: 100%;
-  background-color: #f3f6ff;
-  min-height: 520px;
-  height: auto;
+
+
+@keyframes sitefade {
+  from {opacity: 1; z-index: 10;}
+  to {opacity: 0;z-index: 20;}
 }
+
+
+@keyframes border-top {
+  from {width: 0px;z-index: 10000;}
+  to {width: 20px;z-index: 10000;}
+}
+
 p {
   font-family: MoskNormal;
   font-size: 100%;
@@ -142,6 +144,27 @@ a {
   text-decoration: none;
 }
 
+
+button {
+  font-family: MoskBold;
+  color: #2768ff !important;
+  border: none;
+  padding: 10px;
+  font-size: 120%;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #b2c5fa;
+  color: white;
+  width: 150px;
+  transition: ease 0.2s;
+  cursor: pointer;
+}
+
+button:hover {
+  color: white !important;
+  background-color: #2768ff !important;
+  transform: scale(1.1);
+}
 a.plain {
   border-bottom: 0px;
   color: black;
