@@ -187,3 +187,7 @@ a:hover {
   color: dimgrey;
   border-bottom: solid 2px dimgrey;
 }
+
+.new {
+  border: solid 4px #2768ff !important;
+}
