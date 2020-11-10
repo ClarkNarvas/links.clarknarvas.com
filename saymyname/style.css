@@ -1,6 +1,14 @@
 
 
+@font-face {
+  font-family: MoskNormal;
+  src: url("../fonts/Mosk Normal 400.ttf");
+}
 
+@font-face {
+  font-family: MoskBold;
+  src: url("../fonts/Mosk Bold 700.ttf");
+}
 
 /* start of border body stuff*/
 #top, #bottom, #left, #right {
@@ -95,16 +103,22 @@ body {
   padding: 0;
   font-family: MoskNormal;
 
+
 }
+
+p {
+  font-size: 150% !important;
+}
+
 h1 {
   margin: 0;
   padding: 0;
-  font-family: Lato;
-  font-size: 250%;
+  font-family: MoskBold;
+  font-size: 300%;
 }
 
 h2 {
-  font-family: Lato;
+  font-family: MoskBold;
   font-weight: normal;
 }
 
@@ -129,7 +143,7 @@ h2.link:hover {
 }
 
 p {
-  font-family: Arvo;
+  font-family: MoskNormal;
   font-size: 100%;
 }
 
@@ -143,7 +157,7 @@ a {
 
 
 button {
-  font-family: Lato;
+  font-family: MoskBold;
   color: #2768ff !important;
   border: none;
   padding: 10px;
